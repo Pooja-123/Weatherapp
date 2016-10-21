@@ -46,11 +46,17 @@ window.onload =function(){
          type:'GET',
          dataType:'JSON',
          success: function (res){
-           console.log('line 76',res)
-           var x = res.response[0].periods[0].maxTempC
+           console.log('line 49',res);
+           var x = res.response[0].periods[0].maxTempC;
+
            //25
            var data = document.createElement("div");
            document.getElementById('temperature').innerHTML = x;
+           var y = res.response[0].periods[0].minTempC;
+
+           //25
+           var data1 = document.createElement("div");
+           document.getElementById('temp').innerHTML = y;
 
 
          },
