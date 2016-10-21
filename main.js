@@ -1,30 +1,3 @@
-// window.onload = function(){
-//   console.log("fully loaded");
-//
-// }
-//
-//
-//     var apiKey = 'uzaDNbSkaUSH21Q5GOJzdfIo9CpPy2eaMC562hen';
-//     var weatherUrl = '';
-//       function makeRequest(){
-//          $.get(url)
-//          .done(function(res){ console.log(res)})
-//          .fail(function(xhr){console.log("error has occoured:",xhr)})
-//       }
-//
-//
-//      $.ajax({
-//          url:url,
-//          type:'GET',
-//          dataType:'JSON',
-//          success: function (res){ console.log(res)},
-//          error:function(xhr){ console.log(xhr)}
-//      });
-//
-//
-// });
-
-
 
 window.onload =function(){
   console.log("fully loaded");
@@ -68,18 +41,17 @@ window.onload =function(){
 
 
 
-     $.ajax({
+      $.ajax({
          url:url,
          type:'GET',
          dataType:'JSON',
          success: function (res){
            console.log('line 76',res)
            var x = res.response[0].periods[0].maxTempC
-
+           //25
            var data = document.createElement("div");
-           document.write(data);
-             document.body.appendChild(data);
-            
+           document.getElementById('temperature').innerHTML = x;
+
 
          },
          error:function(xhr){ console.log(xhr)}
