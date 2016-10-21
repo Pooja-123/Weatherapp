@@ -55,9 +55,10 @@ window.onload =function(){
            var y = res.response[0].periods[0].minTempC;
            var data1 = document.createElement("div");
            document.getElementById('temp').innerHTML = y;
-           var z = res.response[0].periods[0].dateTimeISO
+
+           var z = res.response[0].periods[1].dateTimeISO;
            var data2= document.createElement("div");
-           document.getElementById('newtemp'),innerHTMl =z;
+           document.getElementById('newtemp').innerHTML = z;
 
 
          },
