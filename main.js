@@ -53,10 +53,11 @@ window.onload =function(){
            var data = document.createElement("div");
            document.getElementById('temperature').innerHTML = x;
            var y = res.response[0].periods[0].minTempC;
-
-           //25
            var data1 = document.createElement("div");
            document.getElementById('temp').innerHTML = y;
+           var z = res.response[0].periods[0].dateTimeISO
+           var data2= document.createElement("div");
+           document.getElementById('newtemp'),innerHTMl =z;
 
 
          },
