@@ -20,23 +20,23 @@ window.onload =function(){
     console.log("submit" +url);
 
 
-      function makeRequest(){
-         $.get(url)
-          .done(function(response){
-            console.log('jjjjjjjj',response[0].periods.minTempC)
-            var info = response[0].periods.minTempC
-          //  var data = document.createElement("div");
-          //  document.write(data);
-          //    document.body.appendChild(data);
-          //    document.getElementByTagName('div').innerHTML(info)
-          })
-          .fail(function(xhr){console.log("error has occoured:",xhr)})
-          var data = document.createElement("div");
-          document.write(data);
-            document.body.appendChild(data);
-            console.log(data);
-
-      }
+      // function makeRequest(){
+      //    $.get(url)
+      //     .done(function(response){
+      //       console.log('jjjjjjjj',response[0].periods.minTempC)
+      //       var info = response[0].periods.minTempC
+      //     //  var data = document.createElement("div");
+      //     //  document.write(data);
+      //     //    document.body.appendChild(data);
+      //     //    document.getElementByTagName('div').innerHTML(info)
+      //     })
+      //     .fail(function(xhr){console.log("error has occoured:",xhr)})
+      //     var data = document.createElement("div");
+      //     document.write(data);
+      //       document.body.appendChild(data);
+      //       console.log(data);
+      //
+      // }
 
 
 
